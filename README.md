@@ -33,26 +33,3 @@ This is a personal portfolio website built using Vite+React, Tailwind CSS, and F
    npm run dev
    ```
    The app will be available at `http://localhost:3000/`.
-
-## Demo
-Check out the live demo of the portfolio website: [Live Demo](https://sk-illustration-portfolio.netlify.app/)
-
-## Deployment
-To deploy the portfolio website, you can use platforms like:
-- **Vercel**
-- **Netlify**
-- **GitHub Pages** (with additional configurations)
-
-## How to Contribute
-If you’d like to contribute or improve this project, feel free to fork the repository and submit a pull request.
-
-## 🙌 Show Your Support
-If you like this project, please star it and share it with your friends!
-
-## Contact
-If you have any questions or suggestions, feel free to reach out via:
-- **Email:** sathish31102004@gmail.com
-- **LinkedIn:** [@sathishk-dev](https://linkedin.com/in/sathishk-dev)
-
----
-Made with ❤️ by Sathish Kumar.
