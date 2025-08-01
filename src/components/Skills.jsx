@@ -1,9 +1,9 @@
-import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaJs, FaReact, FaNodeJs, FaPython, FaDatabase,FaJava } from "react-icons/fa";
+import React, { useState } from "react";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { RiNextjsFill,RiTailwindCssFill } from "react-icons/ri";
 import { CgFigma } from "react-icons/cg";
+import { FaDatabase, FaJava, FaJs, FaNodeJs, FaPython, FaReact } from "react-icons/fa";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 
 export default function Skills() {
   const [skills] = useState([
@@ -22,21 +22,30 @@ export default function Skills() {
   const [experiences] = useState([
     {
       id: 1,
-      company: "Google",
-      role: "Lead Software Engineer",
-      period: "Nov 2019 - Present",
+      company: "Outlier AI",
+      role: "Large Language Model Trainer",
+      period: "Oct 2024 - Present",
       description:
-        "Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience.",
-      logo: "/assets/google.svg",
+        "Training and fine-tuning large-scale language models for optimal performance and scalability. Ensuring robustness and ethical compliance in AI models while developing clear documentation to support model transparency and usability. Preparing and curating high-quality datasets for model training.",
+      logo: "/assets/experience-icon.svg",
     },
     {
       id: 2,
-      company: "Youtube",
-      role: "Software Engineer",
-      period: "Jan 2017 - Oct 2019",
+      company: "University of British Columbia",
+      role: "Teaching Assistant",
+      period: "Sep 2024 - Apr 2025",
       description:
-        "At Youtube, I served as a  Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability.",
-      logo: "/assets/youtube.svg",
+        "Led lab sessions and provided one-on-one support to students on topics such as assembly language, computer organization, and memory hierarchy. Graded assignments and exams with attention to technical accuracy and provided constructive feedback to enhance student understanding. Collaborated with course instructors to develop instructional materials.",
+      logo: "/assets/experience-icon.svg",
+    },
+    {
+      id: 3,
+      company: "Black Boys Code Canada",
+      role: "Curriculum Coordinator",
+      period: "Jun 2024 - Sep 2024",
+      description:
+        "Developed and implemented an engaging computer science curriculum for Black Boys Code's Technology Summer Camp, aimed at teaching coding and computational thinking to boys ages 8 to 14. Collaborated with co-leaders and instructors to create a dynamic and creative atmosphere, promoting teamwork, problem-solving, and innovation among campers.",
+      logo: "/assets/experience-icon.svg",
     },
   ]);
 

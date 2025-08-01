@@ -1,22 +1,20 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5";
+import React from "react";
 import { BiLogoGmail } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
+import { IoLogoLinkedin } from "react-icons/io5";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
   return (
     <div className="mt-20" id="home">
       <div className="flex justify-between py-10 items-center px-5 lg:px-28 lg:flex-row flex-col-reverse">
-
         <motion.div
           className="lg:w-[45%]"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-
           <motion.div
             className="text-2xl lg:text-5xl flex flex-col mt-8 lg:mt-0 gap-2 lg:gap-5 text-nowrap"
             initial="hidden"
@@ -33,12 +31,8 @@ export default function Home() {
             <motion.h2 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}>
               Hello, <TypeAnimation
                 sequence={[
-                  'I am Sathish Kumar',
+                  'I am Emmanuel C. Okoye',
                   1000,
-                  // 'I am a Web Developer',
-                  // 1000,
-                  // 'I am a UI/UX Designer',
-                  // 1000,
                 ]}
                 speed={10}
                 style={{ fontWeight:600 }}
@@ -46,16 +40,16 @@ export default function Home() {
               />
             </motion.h2>
             <motion.h2 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}>
-              <span className="font-extrabold">Fullstack</span>{" "}
+              <span className="font-extrabold">Computer Science</span>{" "}
               <span
                 className="text-white font-extrabold"
                 style={{ WebkitTextStroke: "1px black" }}
               >
-                Developer
+                Student
               </span>
             </motion.h2>
             <motion.h2 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}>
-              Based In <span className="font-extrabold">India.</span>
+              Based In <span className="font-extrabold">Kelowna, BC.</span>
             </motion.h2>
           </motion.div>
 
@@ -65,7 +59,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
-            Passionate about technology, I specialize in Web Development and Web Designing. I’m focused on building innovative solutions and continuously expanding my skills. My goal is to grow as a developer and contribute to impactful projects in the tech industry.
+            Passionate about technology and AI, I'm a Computer Science student at UBC with a focus on software development and machine learning. I specialize in web development, AI model training, and creating educational content to empower underrepresented communities in tech.
           </motion.p>
 
           <motion.div
@@ -74,17 +68,34 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 1 }}
           >
-            {[BiLogoGmail, IoLogoLinkedin, IoLogoTwitter, BsGithub].map((Icon, index) => (
-              <motion.a
-                key={index}
-                href="#"
-                className="bg-white p-2 lg:p-3 rounded border-2 border-black"
-                whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <Icon className="w-4 h-4 lg:w-5 lg:h-5" />
-              </motion.a>
-            ))}
+            <motion.a
+              href="mailto:emmanuelokoye82@gmail.com"
+              className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+              whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <BiLogoGmail className="w-4 h-4 lg:w-5 lg:h-5" />
+            </motion.a>
+            <motion.a
+              href="https://linkedin.com/in/emmanuelokoye1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+              whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <IoLogoLinkedin className="w-4 h-4 lg:w-5 lg:h-5" />
+            </motion.a>
+            <motion.a
+              href="https://github.com/emantm"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+              whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <BsGithub className="w-4 h-4 lg:w-5 lg:h-5" />
+            </motion.a>
           </motion.div>
         </motion.div>
 
@@ -99,4 +110,4 @@ export default function Home() {
       </div>
     </div>
   );
-}
+} 

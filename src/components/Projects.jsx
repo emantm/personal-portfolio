@@ -1,20 +1,27 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import { TbExternalLink } from "react-icons/tb";
-import { motion } from 'framer-motion';
 
 const projects = [
   {
     id: 1,
-    title: "Crypto Screener Application",
-    description: "A powerful tool for tracking and analyzing cryptocurrency trends in real-time.",
-    image: "/assets/project1.png",
+    title: "ECODES",
+    description: "Founded and manage a web development company that creates high-quality, user-friendly websites for clients while also developing coding tutorials to help marginalized individuals discover their passion for technology.",
+    image: "/assets/ecodes-project.png",
     link: "#"
   },
   {
     id: 2,
-    title: "Stock Market Dashboard",
-    description: "An interactive dashboard to monitor stock prices and market trends efficiently.",
-    image: "/assets/project1.png",
+    title: "CTMS Task Manager",
+    description: "A comprehensive task management system built with modern web technologies. Features include project tracking, team collaboration, deadline management, and progress monitoring. Available on GitHub with full source code.",
+    image: "/assets/ctms-task-manager.png",
+    link: "https://github.com/emantm/CTMS-Task-Manager"
+  },
+  {
+    id: 3,
+    title: "n8n AI Automation Business",
+    description: "Developed and operate an AI automation business using n8n workflow automation platform. Creating custom automation solutions for businesses to streamline operations, improve efficiency, and reduce manual tasks through intelligent workflow design.",
+    image: "/assets/n8n-automation-business.png",
     link: "#"
   }
 ];

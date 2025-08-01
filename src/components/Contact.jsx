@@ -1,10 +1,10 @@
-import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import React, { useRef } from 'react';
 import { BiLogoGmail } from 'react-icons/bi';
 import { BsGithub } from 'react-icons/bs';
-import { IoLogoLinkedin, IoLogoTwitter } from 'react-icons/io5';
-import { IoMdMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
+import { IoMdMail } from "react-icons/io";
+import { IoLogoLinkedin } from 'react-icons/io5';
 
 export default function Contact() {
   const ref = useRef(null);
@@ -56,17 +56,34 @@ export default function Contact() {
               </motion.button>
 
               <div className='flex items-center gap-x-2 lg:gap-x-5'>
-                {[BiLogoGmail, IoLogoLinkedin, IoLogoTwitter, BsGithub].map((Icon, index) => (
-                  <motion.a
-                    key={index}
-                    href="#"
-                    className="bg-white p-2 lg:p-3 rounded border-2 border-black"
-                    whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
-                    whileTap={{ scale: 0.9 }}
-                  >
-                    <Icon className="w-4 h-4 lg:w-5 lg:h-5" />
-                  </motion.a>
-                ))}
+                <motion.a
+                  href="mailto:emmanuelokoye82@gmail.com"
+                  className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+                  whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <BiLogoGmail className="w-4 h-4 lg:w-5 lg:h-5" />
+                </motion.a>
+                <motion.a
+                  href="https://linkedin.com/in/emmanuelokoye1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+                  whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <IoLogoLinkedin className="w-4 h-4 lg:w-5 lg:h-5" />
+                </motion.a>
+                <motion.a
+                  href="https://github.com/emantm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+                  whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <BsGithub className="w-4 h-4 lg:w-5 lg:h-5" />
+                </motion.a>
               </div>
             </motion.div>
           </form>
@@ -89,23 +106,23 @@ export default function Contact() {
             <motion.a
               whileHover={{ x: 5 }}
               className='flex items-center gap-2 group'
-              href="mailto:Youremail@gmail.com"
+              href="mailto:emmanuelokoye82@gmail.com"
             >
               <span className='border-2 transition-all border-transparent group-hover:border-black rounded-full p-1'>
                 <IoMdMail className="w-4 h-4 lg:w-5 lg:h-5" />
               </span>
-              Youremail@gmail.com
+              emmanuelokoye82@gmail.com
             </motion.a>
 
             <motion.a
               whileHover={{ x: 5 }}
               className='flex items-center gap-2 group'
-              href="tele:1234567890"
+              href="tel:(587)-439-3177"
             >
               <span className='border-2 transition-all border-transparent group-hover:border-black rounded-full p-[5px]'>
                 <FaPhone className="w-3 h-3 lg:w-4 lg:h-4" />
               </span>
-              1234567890
+              (587)-439-3177
             </motion.a>
           </div>
         </motion.div>
