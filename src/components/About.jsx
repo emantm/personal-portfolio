@@ -25,15 +25,30 @@ export default function About() {
           About <span className="font-extrabold">Me</span>
         </h2>
 
-        <p className="text-[#71717A] text-sm/6 lg:text-base mt-5 lg:mt-10">
-        Hi, I'm Emmanuel, a Computer Science student at the University of British Columbia, where I'm also pursuing a minor in Business Management. With a strong academic foundation, I’m passionate about building software, exploring the potential of AI, and creating accessible tech education for underrepresented communities.
-
-My journey in tech has taken me from training large language models at Outlier AI to supporting students as a Teaching Assistant at UBC, where I help break down complex computing concepts. I also serve as Vice President of Finance for the Black Student Association, where I manage budgets, secure funding, and support initiatives that uplift the student community.
-
-Outside of academics, I run ECODES, a freelance web development business where I build websites and design coding tutorials for learners of all backgrounds. I love combining creativity with technology and am committed to using my skills to make tech more inclusive, practical, and human-centered. Recently, I launched an AI and n8n automation business focused on helping individuals and small businesses streamline workflows and save time using no-code and low-code solutions. I love combining automation with creativity to build systems that work smarter, not harder.
-
-
-        </p>
+        <ul className="text-[#71717A] text-sm/6 lg:text-base mt-5 lg:mt-10 list-disc list-inside space-y-3">
+          <li>👋 Hi, I’m <strong>Emmanuel</strong> – a Computer Science student at the <strong>University of British Columbia</strong>, also pursuing a <strong>minor in Business Management</strong>.</li>
+          <li>🧠 Passionate about <strong>Software Development</strong>, <strong>Financial Technology</strong>, and building <strong>accessible tech education</strong> for underrepresented communities.</li>
+          <li>💻 Experience includes:
+            <ul className="list-disc list-inside ml-4 space-y-1">
+              <li>Training large language models at <strong>Outlier AI</strong></li>
+              <li>Teaching Assistant at UBC, simplifying computing concepts</li>
+              <li>Vice President of Finance for UBC’s Black Student Association – managing budgets, securing funding, and supporting student initiatives</li>
+            </ul>
+          </li>
+          <li>🌐 Founder of <strong>ECODES</strong>, a freelance web dev business where I:
+            <ul className="list-disc list-inside ml-4 space-y-1">
+              <li>Build websites</li>
+              <li>Create beginner-friendly coding tutorials</li>
+            </ul>
+          </li>
+          <li>⚙️ Launched an <strong>AI & automation business</strong> using <code>n8n</code> and no-code/low-code tools to:
+            <ul className="list-disc list-inside ml-4 space-y-1">
+              <li>Help individuals and small businesses streamline workflows</li>
+              <li>Build smart, efficient systems that save time</li>
+            </ul>
+          </li>
+          <li>🎯 I combine <strong>creativity and technology</strong> to build solutions that are inclusive, practical, and human-centered.</li>
+        </ul>
       </motion.div>
     </div>
   );
