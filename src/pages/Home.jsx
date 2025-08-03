@@ -49,7 +49,7 @@ export default function Home() {
               </span>
             </motion.h2>
             <motion.h2 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}>
-              Based In <span className="font-extrabold">Kelowna, BC.</span>
+              Based In <span className="font-extrabold">Calgary, AB.</span>
             </motion.h2>
           </motion.div>
 
